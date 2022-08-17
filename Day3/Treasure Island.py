@@ -26,9 +26,7 @@ print("Your mission is to find the treasure.")
 choice1 = input('You\'re at a cross road. Where do you want to go? Type "left" or "right"')
 lower_choice1 = choice1.lower()
 
-if lower_choice1 != "left":
-    print("Fail into a hole. Game Over")
-elif lower_choice1 == "left":
+if lower_choice1 == "left":
     choice2 = input('You come to a lake. There is an island in the middle of the lake.? '
                     'Type "wait" to wait for a boat. Type "swim" to swim across')
     lower_choice2 = choice2.lower()
@@ -42,4 +40,5 @@ elif lower_choice1 == "left":
         print("You Win!")
     else:
         print("Game Over.")
-
+else:
+    print("Fail into a hole. Game Over")
